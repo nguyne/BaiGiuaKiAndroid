@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:id="@+id/txt_MaSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã Sinh Viên"/>
+
+
+    <EditText
+        android:id="@+id/txt_HoTen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Họ Tên"/>
+
+
+    <EditText
+        android:id="@+id/txt_SoTC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số Tín Chỉ"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RadioButton
+        android:id="@+id/radio_nganh101"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="101"
+        />
+    <RadioButton
+        android:id="@+id/radio_nganh102"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="102"
+        />
+    <RadioButton
+        android:id="@+id/radio_nganh103"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="103"
+        />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_xoatrang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xóa Trắng"
+            android:layout_marginLeft="60dp"/>
+
+        <Button
+            android:id="@+id/btn_them"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thêm"
+            android:layout_marginLeft="60dp"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/am_lst_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
